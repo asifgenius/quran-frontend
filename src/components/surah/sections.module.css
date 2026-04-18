@@ -1,0 +1,40 @@
+.readerVerseRow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  border-bottom: 1px solid #eef1f4;
+  padding: 2rem 0;
+}
+
+.readerVerseLeft {
+  min-width: 0;
+}
+
+.readerVerseRight {
+  min-width: 0;
+}
+
+.softCard {
+  border: 1px solid #eceef1;
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+@media (min-width: 1280px) {
+  .readerVerseRow {
+    grid-template-columns: minmax(18rem, 0.82fr) minmax(0, 1.18fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .readerVerseRow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+
+  .softCard {
+    border-radius: 1rem;
+  }
+}
