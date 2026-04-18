@@ -1,0 +1,285 @@
+.sectionBlock {
+  border-bottom: 1px solid #edf0f3;
+  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 1.4rem + 1.4vw, 2.35rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #27272a;
+}
+
+.softCard {
+  border: 1px solid #eceef1;
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.startReadingCard {
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 2rem;
+  background: linear-gradient(90deg, #11474a 0%, #1d7f86 100%);
+  border-color: transparent;
+}
+
+.startReadingTitle {
+  max-width: 40rem;
+  font-size: clamp(1.65rem, 1.2rem + 1.3vw, 2.1rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.startReadingCopy {
+  max-width: 42rem;
+  font-size: clamp(0.98rem, 0.93rem + 0.25vw, 1.05rem);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.startReadingMeta {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.startReadingButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: #111827;
+  padding: 0.95rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.startReadingButton:hover {
+  transform: translateY(-1px);
+  background: #0f172a;
+}
+
+.surahRowCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid #e9edf2;
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 1.35rem 1.25rem;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.surahRowCard:hover {
+  transform: translateY(-1px);
+  border-color: #d5dde5;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.diamondBadge {
+  display: flex;
+  height: 3.2rem;
+  width: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  border-radius: 0.7rem;
+  border: 1px solid #eef2f6;
+  background: #f4f6f8;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #3f3f46;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex: none;
+  user-select: none;
+}
+
+.diamondBadge > span {
+  transform: rotate(-45deg);
+}
+
+.paginationBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.paginationMeta {
+  font-size: 0.95rem;
+  color: #57534e;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.paginationButton {
+  border: 1px solid #d6dbe1;
+  border-radius: 9999px;
+  background: #fff;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1c1917;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+  border-color: #0f766e;
+  color: #0f766e;
+}
+
+.paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.paginationPage {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #44403c;
+}
+
+.paginationPages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.paginationPageGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.paginationCircle {
+  display: inline-flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d6dbe1;
+  border-radius: 9999px;
+  background: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #292524;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.paginationCircle:hover {
+  border-color: #0f766e;
+  color: #0f766e;
+  transform: translateY(-1px);
+}
+
+.paginationCircleActive {
+  border-color: #0f766e;
+  background: #0f766e;
+  color: #fff;
+}
+
+.paginationCircleActive:hover {
+  color: #fff;
+}
+
+.paginationEllipsis {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #78716c;
+}
+
+.paginationLoading {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #57534e;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sectionBlock {
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+
+  .surahRowCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .startReadingCard {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+
+  .startReadingTitle {
+    font-size: 1.6rem;
+  }
+
+  .startReadingCopy {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .startReadingMeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .softCard {
+    border-radius: 1rem;
+  }
+
+  .diamondBadge {
+    height: 2.7rem;
+    width: 2.7rem;
+    font-size: 1rem;
+  }
+
+  .paginationBar {
+    align-items: center;
+  }
+
+  .paginationControls {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
